@@ -3,21 +3,267 @@
 <head>
 <style>
 body{
+  margin: 0;
+  padding: 0;
   background: url("https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2015/11/overwatch-heroes-background-blizzard-800x450.png") no-repeat fixed center;
   background-size: 100% 100%;
 }
 h1 {
+  text-transform:uppercase;
   font-family: impact;
   font-size: 72px;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.container {
+  max-width: 1350px;
+	padding: 50px;
+  margin: 0 auto;
+	
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+ul li {
+	position: relative;
+	list-style: none;
+	margin: 2px;
+	border: 3px solid rgb(244, 242, 247);
+	border-radius: 7px;
+	width: 100px;
+	height: 150px;
+	background: skyblue;
+	text-align: center;
+	text-transform: uppercase;
+	transform: scale3d(1,1,1) skewX(-10deg);
+  overflow: hidden;
+	filter: drop-shadow(0 1px 4px rgba(10,2,12,0.2));
+	transition: 70ms 20ms ease;
+}
+ul li:hover {
+	transform: scale3d(1.15,1.15,1.15) skewX(-10deg);
+  z-index: 1;
+}
+ul li img {
+	width: 120px;
+	position: absolute;
+	bottom: -15px;
+	right: -10px;
+	transform: translateZ(0) skewX(10deg);
+}
+.hero-info {
+  position: absolute;
+  bottom: 0;
+	width: 100%;
+	background-color: rgb(244, 242, 247);
+}
+.hero-info p {
+	transform: translateZ(0) skewX(10deg);
+  font-family: impact;
+	font-style: oblique;
+	font-size: 15px;
+}
 </style>
 </head>
 <body>
+<h1><em>hero gallery</em></h1>
+<div class="container">
+		<ul>
+			<li class="ana">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/ana/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Ana</p>	
+				</div>
+				
+			</li>
+			<li class="bastion">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Bastion</p>	
+				</div>
+				
+			</li>
+      <li class="brigitte">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Brigitte</p>	
+				</div>
+				
+			</li>
+			<li class="dva">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>D.Va</p>	
+				</div>
+				
+			</li>
+			<li class="doomfist">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Doomfist</p>	
+				</div>
+				
+			</li>
+			<li class="genji">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/genji/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Genji</p>	
+				</div>
+				
+			</li>
+			<li class="hanzo">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Hanzo</p>	
+				</div>
+				
+			</li>
+			<li class="junkrat">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Junkrat</p>	
+				</div>
+				
+			</li>
+			<li class="lucio">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Lucio</p>	
+				</div>
+				
+			</li>
+			<li class="mccree">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>McCree</p>	
+				</div>
+				
+			</li>
+			<li class="mei">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mei/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Mei</p>	
+				</div>
+				
+			</li>
+			<li class="mercy">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Mercy</p>	
+				</div>
+        
+      </li>
+			<li class="moira">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/moira/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Moira</p>	
+				</div>
+				
+			</li>
+			<li class="orisa">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Orisa</p>	
+				</div>
+				
+			</li>
+			<li class="pharah">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Pharah</p>	
+				</div>
+				
+			</li>
+			<li class="reaper">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Reaper</p>	
+				</div>
+				
+			</li>
+			<li class="reinhardt">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Reinhardt</p>	
+				</div>
+				
+			</li>
+			<li class="roadhog">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/roadhog/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Roadhog</p>	
+				</div>
+				
+			</li>
+			<li class="soldier">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>soldier: 76</p>	
+				</div>
+				
+			</li>
+			<li class="sombra">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>sombra</p>	
+				</div>
+				
+			</li>
+			<li class="symmetra">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Symmetra</p>	
+				</div>
+				
+			</li>
+			<li class="torbjorn">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Torbjorn</p>	
+				</div>
+				
+			</li>
+			<li class="tracer">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/tracer/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Tracer</p>	
+				</div>
+				
+			</li>
+			<li class="widowmaker">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Widowmaker</p>	
+				</div>
+				
+			</li>
+			<li class="winston">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/winston/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Winston</p>	
+				</div>
+				
+			</li>
+			<li class="zarya">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/zarya/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Zarya</p>	
+				</div>
+				
+			</li>
+			<li class="zenyatta">
+				<img src="https://d1u1mce87gyfbn.cloudfront.net/hero/zenyatta/hero-select-portrait.png">
+				<div class="hero-info">
+					<p>Zenyatta</p>	
+				</div>
+				
+			</li>
+		</ul>
+	</div>
 
-<h1><em>HERO GALLERY</em></h1>
-
+<p>Hero images provided by <a href="https://playoverwatch.com/en-us/heroes/">Blizzard</a></p>
 </body>
 </html>
