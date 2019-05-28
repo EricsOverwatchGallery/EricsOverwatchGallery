@@ -69,10 +69,8 @@ ul li img {
 }
 </style>
 <script>
-var hero = Ana;
-document.getElementByClass("ana").onclick = function() {heroFunction("Ana")};
 function heroFunction(hero) {
-  location.replace("https://EricsOverwatchGallery.github.io/Heroes/"+hero+".html")
+  location.replace("https://Ericsoverwatchgallery.github.io/Heroes/"+hero+".html")
 }
 </script>
 </head>
@@ -80,186 +78,277 @@ function heroFunction(hero) {
 <h1><em>hero gallery</em></h1>
 <div class="container">
   <ul>
-    <li class="ana">
+    <li id="ana">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/ana/hero-select-portrait.png">
       <div class="hero-info">
         <p>Ana</p>	
+        </div>
       </div>	
     </li>
-    <li class="ashe">
+    <script>
+      document.getElementById("ana").onclick = function(){heroFunction("Ana")};
+    </script>
+    <li id="ashe">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/hero-select-portrait.png">
       <div class="hero-info">
         <p>Ashe</p>	
       </div>	
     </li>
-    <li class="baptiste">
+    <script>
+      document.getElementById("ashe").onclick = function(){heroFunction("Ashe")};
+    </script>
+    <li id="baptiste">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/baptiste/hero-select-portrait.png">
       <div class="hero-info">
         <p>Baptiste</p>	
       </div>	
     </li>
-    <li class="bastion">
+    <script>
+      document.getElementById("baptiste").onclick = function(){heroFunction("Baptiste")};
+    </script>
+    <li id="bastion">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/hero-select-portrait.png">
       <div class="hero-info">
         <p>Bastion</p>	
       </div>
     </li>
-    <li class="brigitte">
+    <script>
+      document.getElementById("bastion").onclick = function(){heroFunction("Bastion")};
+    </script>
+    <li id="brigitte">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/hero-select-portrait.png">
       <div class="hero-info">
         <p>Brigitte</p>	
       </div>
     </li>
-    <li class="dva">
+    <script>
+      document.getElementById("brigitte").onclick = function(){heroFunction("Brigitte")};
+    </script>
+    <li id="dva">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/dva/hero-select-portrait.png">
       <div class="hero-info">
         <p>D.Va</p>	
       </div>
     </li>
-    <li class="doomfist">
+    <script>
+      document.getElementById("dva").onclick = function(){heroFunction("Dva")};
+    </script>
+    <li id="doomfist">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/doomfist/hero-select-portrait.png">
       <div class="hero-info">
         <p>Doomfist</p>	
       </div>
     </li>
-    <li class="genji">
+    <script>
+      document.getElementById("doomfist").onclick = function(){heroFunction("Doomfist")};
+    </script>
+    <li id="genji">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/genji/hero-select-portrait.png">
       <div class="hero-info">
         <p>Genji</p>	
       </div>
     </li>
-    <li class="hanzo">
+    <script>
+      document.getElementById("genji").onclick = function(){heroFunction("Genji")};
+    </script>
+    <li id="hanzo">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/hanzo/hero-select-portrait.png">
       <div class="hero-info">
         <p>Hanzo</p>	
       </div>
     </li>
-    <li class="junkrat">
+    <script>
+      document.getElementById("hanzo").onclick = function(){heroFunction("Hanzo")};
+    </script>
+    <li id="junkrat">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/junkrat/hero-select-portrait.png">
       <div class="hero-info">
         <p>Junkrat</p>	
       </div>
     </li>
-    <li class="lucio">
+    <script>
+      document.getElementById("junkrat").onclick = function(){heroFunction("Junkrat")};
+    </script>
+    <li id="lucio">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/lucio/hero-select-portrait.png">
       <div class="hero-info">
         <p>Lucio</p>	
       </div>
     </li>
-    <li class="mccree">
+    <script>
+      document.getElementById("lucio").onclick = function(){heroFunction("Lucio")};
+    </script>
+    <li id="mccree">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mccree/hero-select-portrait.png">
       <div class="hero-info">
         <p>McCree</p>	
       </div>
     </li>
-    <li class="mei">
+    <script>
+      document.getElementById("mccree").onclick = function(){heroFunction("McCree")};
+    </script>
+    <li id="mei">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mei/hero-select-portrait.png">
       <div class="hero-info">
         <p>Mei</p>	
       </div>
     </li>
-    <li class="mercy">
+    <script>
+      document.getElementById("mei").onclick = function(){heroFunction("Mei")};
+    </script>
+    <li id="mercy">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/mercy/hero-select-portrait.png">
       <div class="hero-info">
         <p>Mercy</p>	
       </div>
     </li>
-    <li class="moira">
+    <script>
+      document.getElementById("mercy").onclick = function(){heroFunction("Mercy")};
+    </script>
+    <li id="moira">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/moira/hero-select-portrait.png">
       <div class="hero-info">
         <p>Moira</p>	
       </div>
     </li>
-    <li class="orisa">
+    <script>
+      document.getElementById("moira").onclick = function(){heroFunction("Moira")};
+    </script>
+    <li id="orisa">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/hero-select-portrait.png">
       <div class="hero-info">
         <p>Orisa</p>	
     </div>
     </li>
-    <li class="pharah">
+    <script>
+      document.getElementById("Orisa").onclick = function(){heroFunction("orisa")};
+    </script>
+    <li id="pharah">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/pharah/hero-select-portrait.png">
       <div class="hero-info">
         <p>Pharah</p>	
       </div>			
     </li>
-    <li class="reaper">
+    <script>
+      document.getElementById("pharah").onclick = function(){heroFunction("Pharah")};
+    </script>
+    <li id="reaper">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/reaper/hero-select-portrait.png">
       <div class="hero-info">
         <p>Reaper</p>	
       </div>
     </li>
-    <li class="reinhardt">
+    <script>
+      document.getElementById("reaper").onclick = function(){heroFunction("Reaper")};
+    </script>
+    <li id="reinhardt">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/reinhardt/hero-select-portrait.png">
       <div class="hero-info">
         <p>Reinhardt</p>	
       </div>
     </li>
-    <li class="roadhog">
+    <script>
+      document.getElementById("reinhardt").onclick = function(){heroFunction("Reinhardt")};
+    </script>
+    <li id="roadhog">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/roadhog/hero-select-portrait.png">
       <div class="hero-info">
         <p>Roadhog</p>	
       </div>
     </li>
-    <li class="soldier">
+    <script>
+      document.getElementById("roadhog").onclick = function(){heroFunction("Roadhog")};
+    </script>
+    <li id="soldier">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/soldier-76/hero-select-portrait.png">
       <div class="hero-info">
         <p>soldier: 76</p>	
       </div>
     </li>
-    <li class="sombra">
+    <script>
+      document.getElementById("soldier").onclick = function(){heroFunction("Soldier76")};
+    </script>
+    <li id="sombra">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/sombra/hero-select-portrait.png">
       <div class="hero-info">
         <p>sombra</p>	
       </div>
     </li>
-    <li class="symmetra">
+    <script>
+      document.getElementById("sombra").onclick = function(){heroFunction("Sombra")};
+    </script>
+    <li id="symmetra">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/symmetra/hero-select-portrait.png">
       <div class="hero-info">
         <p>Symmetra</p>	
       </div>
     </li>
-    <li class="torbjorn">
+    <script>
+      document.getElementById("symmetra").onclick = function(){heroFunction("Symmetra")};
+    </script>
+    <li id="torbjorn">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/hero-select-portrait.png">
       <div class="hero-info">
         <p>Torbjorn</p>	
       </div>
     </li>
-    <li class="tracer">
+    <script>
+      document.getElementById("torbjorn").onclick = function(){heroFunction("Torbjorn")};
+    </script>
+    <li id="tracer">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/tracer/hero-select-portrait.png">
       <div class="hero-info">
         <p>Tracer</p>	
       </div>
     </li>
-    <li class="widowmaker">
+    <script>
+      document.getElementById("tracer").onclick = function(){heroFunction("Tracer")};
+    </script>
+    <li id="widowmaker">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/widowmaker/hero-select-portrait.png">
       <div class="hero-info">
         <p>Widowmaker</p>	
       </div>
     </li>
-    <li class="winston">
+    <script>
+      document.getElementById("widowmaker").onclick = function(){heroFunction("Widowmaker")};
+    </script>
+    <li id="winston">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/winston/hero-select-portrait.png">
       <div class="hero-info">
         <p>Winston</p>	
       </div>
     </li>
-    <li class="wreckingball">
+    <script>
+      document.getElementById("winston").onclick = function(){heroFunction("Winston")};
+    </script>
+    <li id="wreckingball">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/wrecking-ball/hero-select-portrait.png">
       <div class="hero-info">
         <p>Wrecking Ball</p>	
       </div>
     </li>
-    <li class="zarya">
+    <script>
+      document.getElementById("wreckingball").onclick = function(){heroFunction("Hammond")};
+    </script>
+    <li id="zarya">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/zarya/hero-select-portrait.png">
       <div class="hero-info">
         <p>Zarya</p>	
       </div>
     </li>
-    <li class="zenyatta">
+    <script>
+      document.getElementById("zarya").onclick = function(){heroFunction("Zarya")};
+    </script>
+    <li id="zenyatta">
       <img src="https://d1u1mce87gyfbn.cloudfront.net/hero/zenyatta/hero-select-portrait.png">
       <div class="hero-info">
         <p>Zenyatta</p>	
       </div>
     </li>
+    <script>
+      document.getElementById("zenyatta").onclick = function(){heroFunction("Zenyatta")};
+    </script>
   </ul>
 </div>
 <p style="text-align: center;">Hero images provided by <a href="https://playoverwatch.com/en-us/heroes/">Blizzard</a></p>
