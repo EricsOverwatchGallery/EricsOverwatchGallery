@@ -69,9 +69,10 @@ ul li img {
 }
 </style>
 <script>
-document.getElementByClass("ana").onclick = function() {heroFunction(Ana)};
-function heroFunction(str) {
-  location.replace("https://EricsOverwatchGallery.github.io/Heroes/"+str+".html")
+var hero = Ana;
+document.getElementByClass("ana").onclick = function() {heroFunction("Ana")};
+function heroFunction(hero) {
+  location.replace("https://EricsOverwatchGallery.github.io/Heroes/"+hero+".html")
 }
 </script>
 </head>
