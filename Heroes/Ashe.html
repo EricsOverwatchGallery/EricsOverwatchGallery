@@ -1,1 +1,145 @@
-Ashe
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#asheVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -15%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="asheVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/ashe/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Ashe</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>Ashe is the ambitious and calculating leader of the Deadlock Gang and a respected figure in the criminal underworld. Born into a wealthy family, Ashe grew up surrounded by privilege. Her parents were highly sought-after business consultants and coaches for powerful CEOs around the world. Though her parents paid little attention to her (mostly leaving her in the care of the family’s omnic butler, Bob), they ensured that Ashe had every opportunity to succeed. But a chance meeting with a local ruffian, named Jesse McCree, and an impromptu string of crimes committed together opened her eyes to her true calling. The satisfaction of outwitting her targets and the thrill of getting away with it set her on the outlaw path. Along with the other three founders of the Deadlock Gang, Ashe started to make a name for herself with bigger and more extravagant heists. The Deadlock Gang’s rapid rise to prominence put them at odds with the other criminal organizations in the American Southwest; the encounters often became violent. After years of skirmishes and bloodshed, Ashe called the heads of the major groups together. Ashe saw the potential to grow the influence of all. She used what she’d learned from her parents’ business to bring order to these groups. Her proposal was that the gangs could work together (or at least, not work against each other). Her principles: keep your word, don’t work with the law, respect each other’s territory, and always punish betrayal. No longer having to focus her energies on squabbles with the other gangs, Ashe is now writing her name across the American Southwest with a string of audacious heists and operations that has put her at top of the authorities’ most-wanted lists and cemented her legacy as an outlaw legend.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally Bob, to join the fray when the need arises.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Ashe shoots her semi automatic rifle unscoped for an increased rate of fire</td>
+          <td> 40 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Ashe scopes in, trading her fire rate for increased damage and accuracy</td>
+            <td> 85 damage with a damage fall off multiplier up to half, 50 meters away. 2x crit multiplier</td>
+            <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Dynamite </td>
+          <td> Ashe throws a bundle of dynamite that detonates after a short delay or immediately when shot. The dynamite then inflicts the burning effect on enemies causing damage over time</td>
+          <td> 30-75 on detonation depending how close you are to the epicenter of the explosion and 20 damage per second for 5 seconds from the burning effect</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> Coach Gun </td>
+          <td> Ashe shoots her secondary blunderbuss using the knockback to proper herself and enemies away</td>
+          <td> 6 per pellet and fires 15 pellets which will only travel up to 9.4 meters</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> B.O.B. </td>
+          <td> Ashe summons her Big Omnic Butler, B.O.B. who charges forward and knocks enemies into the air making them easy target while firing from his wrist cannons.</td>
+          <td> 120 damage upon running into an enemy and 112 damage per second while firing at enemies. Lasts 10 seconds</td>
+          <td> Charges 1% every<br> 4 seconds or once you've gained 2000 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
