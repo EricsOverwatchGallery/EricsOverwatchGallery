@@ -2,12 +2,16 @@
 <html>
   <head>
     <style>
-body{
-  margin 0;
-  padding: 0;
-  background: url("https://hdqwalls.com/download/overwatch-game-all-heroes-2560x1440.jpg") no-repeat fixed center;
-  background-size: 2560px 1440px;
-  background-position: -300px -155px;
+#anaVid{
+  z-index: -1;
+  position: fixed;
+  right:0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
 }
 h1 {
   margin: 0;
@@ -21,45 +25,78 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 .container{
+  margin: 0px;
   padding: 10px;
-  margin: auto;
 }
 .collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
   height: 50px;
   width: 400px;
-  text-align: left;
-  background:#0000ff;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
   color:white;
   border: none;
 }
 .active, .collapsible:hover {
-  background-color: #6666ff;
+  background-color: rgba(47,172,208,0.8);
 }
 .content{
-  width: 400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 370px;
   color: white;
   overflow: hidden;
   display: none;
-  background-color: #0000ff; 
+  background-color: rgba(71,71,90,0.8); 
 }
-
   </style>
   </head>
   <body>
+  <video autoplay muted loop id="anaVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/ana/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
   <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
     <h1><em>Ana</em></h1>
     <div class="container">
       <button class="collapsible">
-          hello
+          SPRAYS
           </button>
           <div class="content">
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
        </div>
     </div>
+    <div class="container">
+      <button class="collapsible">
+          SPRAYS
+          </button>
+          <div class="content">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          SPRAYS
+          </button>
+          <div class="content">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          SPRAYS
+          </button>
+          <div class="content">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+       </div>
+    </div>
+    </div>
     <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -71,8 +108,6 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-
 </script>
   </body>
 </html>
