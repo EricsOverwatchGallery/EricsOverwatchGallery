@@ -1,1 +1,145 @@
-﻿baptiste
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#bapVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="bapVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/baptiste/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Baptiste</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>An elite combat medic and ex-Talon operative, Baptiste now uses his skills to help those whose lives have been impacted by war. Jean-Baptiste Augustin was one of the 30 million children orphaned by the Omnic Crisis. With limited opportunities and resources, he enlisted in the military. The Caribbean Coalition, a pan-island force formed in response to the Crisis, became his new home. Guided by his innate desire to help people, Baptiste chose the path of a combat medic and served in an elite branch of the Caribbean Coalition’s special ops. After his service was complete, Baptiste struggled to find a demand for his unique skills. He turned to one of the few opportunities open to him: joining the Talon mercenary group, one of the many organizations that were poised to profit off the chaos in the war's aftermath. For the first time ever, Baptiste had a taste of the good life. Talon's missions were easy and paid well, and he put aside some of his earnings to set up a clinic in his hometown. But slowly, his unit's orders escalated in brutality, expanding into assassinations and operations with civilian casualties. Confronted by his team's actions, Baptiste realized he was perpetuating a cycle of violence like the one that had destroyed his own community. He abandoned Talon, disgusted with what he had done and determined to forge a new path for himself. But Talon would not let him go. Baptiste knew too much, and they sent operatives after him to silence him. Agent after agent came for him, including Baptiste's former comrades. To stay under the radar, Baptiste drifted from place to place, aiding in humanitarian efforts around the globe. The few Talon members who managed to track him down were never seen again. Now, Baptiste works toward a better world, healing where he can and fighting when he must. He knows that he cannot undo his past—but that making a difference now is what matters.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Baptiste wields an assortment of experimental devices and weaponry to keep allies alive and eliminate threats under fierce conditions. A battle-hardened combat medic, he is just as capable of saving lives as he is taking out the enemy.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Baptiste fires a three round burst from his biotic launcher, reward accuracy and recoil control with deadly damage.</td>
+          <td> 25 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 45 mag, 1.5 second reload</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Baptiste fires healing grenades from the grenade launcher portion of his weapon, healing allies near the impact point</td>
+            <td> 60 health recovered for allies within 3 meters of the impact zone</td>
+            <td> 10 mag, 1.5 second reload</td>
+        </tr>
+        <tr>
+          <td> Regenerative Burst </td>
+          <td> Baptiste activates an intense regenerative burst that heals himself and nearby allies over time</td>
+          <td>30 healing per second for 5 seconds to yourself and allies within 10 meters</td>
+          <td> 15 seconds</td>
+        </tr>
+        <tr>
+          <td> Immortality Field </td>
+          <td> Baptiste throws a device that creates a field that prevents allies from dying. The generator can be targeted and destroyed by enemies.</td>
+          <td> Does no damage or healing but keeps all allies within it's 12 meter range alive with 40 health as long as the generator is active</td>
+          <td> 20 seconds</td>
+        </tr>
+        <tr>
+          <td> Amplification Matrix </td>
+          <td> Baptiste creates a matrix that doubles the effect of all friendly healing and damage projectiles that pass through it.</td>
+          <td> Gives a 100% damage and healing boost to any friendly projectiles that pass through it. Lasts 8 seconds and has a vertical 5x4 area of effect</td>
+          <td> Charges 1% every 3.5 seconds or once you've gained 1750 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
