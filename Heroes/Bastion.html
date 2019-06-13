@@ -1,1 +1,142 @@
-﻿Bastion
+    
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#bastVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="bastVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/bastion/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Bastion</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>Once a frontline combatant in the devastating Omnic Crisis, this curious Bastion unit now explores the world, fascinated by nature but wary of a fearful humanity.
+
+Originally created for peacekeeping purposes, Bastion robot units possessed the unique ability to rapidly reconfigure themselves into an assault-cannon mode. But during the Omnic Crisis, they were turned against their human makers, forming the bulk of the omnics' rebel army. Following the resolution of the crisis, nearly all of them were destroyed or disassembled. To this day, Bastion units still symbolize the horrors of the conflict. One unique Bastion unit, severely damaged in the final battles of the war, was left forgotten for over a decade. It lay dormant, exposed to the elements and rusting while nature slowly reclaimed it. Overgrown with vines and roots and nested upon by small animals, the robot sat inert, seemingly unaware of the passing of time. That was until one fateful day, when it unexpectedly reactivated. With its combat programming all but lost, it instead displayed an intense curiosity about the natural world and its inhabitants. This inquisitive Bastion unit set out to explore its surroundings and discover its purpose on a war-ravaged planet. Though "Bastion" appears to be gentle—even harmless, at times—its core combat programming takes over when the unit senses danger, utilizing its entire arsenal to eliminate anything it perceives as a threat. This has led to instances of conflict with the few humans it has encountered, and has driven it to avoid populated areas in favor of the wild, uncharted regions of the world.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Repair protocols and the ability to transform between stationary Assault, mobile Recon and devastating Tank configurations provide Bastion with a high probability of victory.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Bastion fires his submachine gun in full auto bursts at medium range.</td>
+          <td> 20 damage with a damage fall off multiplier up to half, 45 meters away. 2x crit multiplier</td>
+          <td> 35 mag, 1.5 second reload</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Bastion uses his other arm as a welding tool, repairing himself and recovering health. He cannot fire at enemy's while healing.</td>
+            <td> 75 healing per second for up to 4 seconds</td>
+            <td> 7 seconds to recover all charges, 1 second in between uses</td>
+        </tr>
+        <tr>
+          <td> Configuration Change </td>
+          <td> Bastion shifts into sentry mode if in recon mode and vice versa. Transforming into sentry form takes away his ability to walk but replaces his SMG with a gatling gun amplifying both his rate of fire and damage. </td>
+          <td> 450 damage per second with a damage fall off multiplier up to half, 55 meters away. No crit multiplier</td>
+          <td> 1 second from Recon into Sentry, 0.5 from Sentry into Recon.</td>
+        </tr>
+        <tr>
+          <td> Tank Mode </td>
+          <td> Bastion transforms into a mini-tank with a powerful long range cannon.</td>
+          <td> Bastion's tank mode allows him to fire explosive shells dealing 205 damage upon impact and 42-140 damage depending on how close the enemy is to the detonation area.</td>
+          <td> Charges 1% every 4.25 seconds or once you've gained 2062.5 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
