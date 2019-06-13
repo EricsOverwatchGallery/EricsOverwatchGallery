@@ -1,1 +1,145 @@
-Orisa
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#orisaVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="orisaVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/orisa/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Orisa</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>Built from parts of one of Numbani's short-lived OR15 defense robots, Orisa is the city's newest protector, though she still has much to learn. Originally put into service before the Omnic Crisis, the OR14 "Idina" line of security robots was built in Nigeria's massive manufacturing omnium. After the war, they were taken out of production, along with many of the other models used during the crisis. Twenty years later, Numbani revived and recommissioned the OR14 program to protect the city from external threats. These new OR15s were deployed for a short time before they were destroyed in an attack by Doomfist. Following the attack, the program was scrapped, and the civic government sold off the remaining OR15 inventory. Some parts were purchased by eleven-year-old Efi Oladele, a brilliant girl whose early accomplishments in robotics and artificial intelligence had already earned her the Adawe Foundation's "genius grant." With the approval of her understanding and open-minded parents, Efi spent the bulk of her grant money to acquire one of the decommissioned OR15 bots. She believed that Numbani needed a protector and that an upgraded OR15 could do just that. Efi repaired and reconfigured the robot and installed a personality core that she had designed herself. She named Numbani's newest hero Orisa. Orisa has shown that she can be of service to the city, but she is still working toward finding her optimal protocols. The omnic's inexperience can cause her to be an occasional liability. Fortunately, between Efi's willingness to make the necessary modifications and Orisa's adaptive artificial intelligence, both robot and creator have always been able to set things right. As Orisa starts her career as a guardian, she has much to learn about the world and her functionality. But as long as she is guided by Efi's boundless optimism and her own growing sense of honor and duty, Orisa stands ready to protect Numbani and her creator at any cost.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Orisa serves as the central anchor of her team, and defends her teammates from the frontline with a protective barrier. She can attack from long range, fortify her own defenses, launch graviton charges to slow and move enemies, and deploy a Supercharger to boost the damage output of multiple allies at once.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Ashe shoots her semi automatic rifle unscoped for an increased rate of fire</td>
+          <td> 40 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Ashe scopes in, trading her fire rate for increased damage and accuracy</td>
+            <td> 85 damage with a damage fall off multiplier up to half, 50 meters away. 2x crit multiplier</td>
+            <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Dynamite </td>
+          <td> Ashe throws a bundle of dynamite that detonates after a short delay or immediately when shot. The dynamite then inflicts the burning effect on enemies causing damage over time</td>
+          <td> 30-75 on detonation depending how close you are to the epicenter of the explosion and 20 damage per second for 5 seconds from the burning effect</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> Coach Gun </td>
+          <td> Ashe shoots her secondary blunderbuss using the knockback to proper herself and enemies away</td>
+          <td> 6 per pellet and fires 15 pellets which will only travel up to 9.4 meters</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> B.O.B. </td>
+          <td> Ashe summons her Big Omnic Butler, B.O.B. who charges forward and knocks enemies into the air making them easy target while firing from his wrist cannons.</td>
+          <td> 120 damage upon running into an enemy and 112 damage per second while firing at enemies. Lasts 10 seconds</td>
+          <td> Charges 1% every<br> 4 seconds or once you've gained 2000 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
