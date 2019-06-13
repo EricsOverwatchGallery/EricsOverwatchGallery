@@ -1,1 +1,145 @@
-Wrecking Ball
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#hammondVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="hammondVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/wrecking-ball/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Wrecking Ball</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>In one of the many experiments carried out at Horizon Lunar Colony, animals were given genetic therapy to assess their adaptation to extended periods of habitation on the moon. As an unexpected side effect, several of them exhibited exceptional growth in physical size and brain function. While most of the test subjects were gorillas or other primates, there were some exceptions, including a hamster named Hammond. Like the others, Hammond's intelligence grew, and he became more curious about the world around him. Much to the puzzlement and amusement of the scientists, Hammond would frequently escape into different parts of the moon base. Though they'd always find him and return him to his cell, they never figured out the true purpose behind his nightly escapades. What they didn't know was that Hammond was busy teaching himself the skills of a mechanic, which would soon come in handy. The colony was eventually thrown into chaos when some of the gorillas rose up against the human scientists and took control. Not all of the animals participated, however, and one of the gorillas, Winston, was making a plan to escape to earth. Hammond sensed his opportunity. He built a makeshift capsule and secretly hitched it to Winston's craft as the gorilla blasted off. As the two entered earth's atmosphere, Hammond broke off and landed in a different location: the wasteland of the Australian Outback. Hammond modified his escape pod to enter the lucrative mech battle arena of the Scrapyard. Working his way up the ranks, "Wrecking Ball" went from contender to champion, though the pilot's identity remained a mystery to all. Gathering his winnings, Hammond was able to upgrade his mech enough to survive the dangerous trek out of the Junker-controlled Outback. Now free to travel and do as he pleases, Hammond is exploring the world and finding new adventures along the way.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Wrecking Ball rolls across the battlefield, using his arsenal of weapons and his mech’s powerful body to crush his enemies.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Ashe shoots her semi automatic rifle unscoped for an increased rate of fire</td>
+          <td> 40 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Ashe scopes in, trading her fire rate for increased damage and accuracy</td>
+            <td> 85 damage with a damage fall off multiplier up to half, 50 meters away. 2x crit multiplier</td>
+            <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Dynamite </td>
+          <td> Ashe throws a bundle of dynamite that detonates after a short delay or immediately when shot. The dynamite then inflicts the burning effect on enemies causing damage over time</td>
+          <td> 30-75 on detonation depending how close you are to the epicenter of the explosion and 20 damage per second for 5 seconds from the burning effect</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> Coach Gun </td>
+          <td> Ashe shoots her secondary blunderbuss using the knockback to proper herself and enemies away</td>
+          <td> 6 per pellet and fires 15 pellets which will only travel up to 9.4 meters</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> B.O.B. </td>
+          <td> Ashe summons her Big Omnic Butler, B.O.B. who charges forward and knocks enemies into the air making them easy target while firing from his wrist cannons.</td>
+          <td> 120 damage upon running into an enemy and 112 damage per second while firing at enemies. Lasts 10 seconds</td>
+          <td> Charges 1% every<br> 4 seconds or once you've gained 2000 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
