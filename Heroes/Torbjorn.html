@@ -1,1 +1,145 @@
-Torbjorn
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#torbjornVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="torbjornVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/torbjorn/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Torbjörn</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>At its height, Overwatch possessed one of the most advanced armaments on the planet, which could be traced to the workshop of an ingenious engineer named Torbjörn Lindholm. Before the Omnic Crisis, Torbjörn had gained notoriety for designing weapons systems used by countries around the world. However, his belief that technology must serve a better vision for humanity put him at odds with his employers, who desired to control his weapons using networked computer intelligence. Torbjörn had a deep mistrust of sentient robotic intelligence, and while many of his peers wrote this off as paranoia, his worst fears were realized when the robot populations of the world turned against their human creators during the Omnic Crisis. Because of his engineering genius, he was recruited to join the original Overwatch strike team, and his many inventions proved integral to ending the crisis. In the years that followed, Overwatch became an international peacekeeping force, and Torbjörn remained a critical resource for all of its technological needs and signature weapons systems. But in the aftermath of Overwatch's fall, many of Torbjörn's weapons were stolen or stashed away around the world. Feeling responsible for his creations, Torbjörn is determined to stop them from falling into the wrong hands and wreaking havoc on the innocent.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Torbjörn’s extensive arsenal includes a rivet gun, hammer, and a personal forge that he can use to build turrets.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Ashe shoots her semi automatic rifle unscoped for an increased rate of fire</td>
+          <td> 40 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Ashe scopes in, trading her fire rate for increased damage and accuracy</td>
+            <td> 85 damage with a damage fall off multiplier up to half, 50 meters away. 2x crit multiplier</td>
+            <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Dynamite </td>
+          <td> Ashe throws a bundle of dynamite that detonates after a short delay or immediately when shot. The dynamite then inflicts the burning effect on enemies causing damage over time</td>
+          <td> 30-75 on detonation depending how close you are to the epicenter of the explosion and 20 damage per second for 5 seconds from the burning effect</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> Coach Gun </td>
+          <td> Ashe shoots her secondary blunderbuss using the knockback to proper herself and enemies away</td>
+          <td> 6 per pellet and fires 15 pellets which will only travel up to 9.4 meters</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> B.O.B. </td>
+          <td> Ashe summons her Big Omnic Butler, B.O.B. who charges forward and knocks enemies into the air making them easy target while firing from his wrist cannons.</td>
+          <td> 120 damage upon running into an enemy and 112 damage per second while firing at enemies. Lasts 10 seconds</td>
+          <td> Charges 1% every<br> 4 seconds or once you've gained 2000 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
