@@ -1,1 +1,145 @@
-D.va
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#dvaVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="dvaVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/dva/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>D.va</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>D.Va is a former professional gamer who now uses her skills to pilot a state-of-the-art mech in defense of her homeland. Twenty years ago, South Korea was attacked by a colossal omnic monstrosity that rose from the depths of the East China Sea. The massive, lumbering construct caused catastrophic damage to coastal cities before it was driven back beneath the waves. In response, the South Korean government developed a mechanized armored drone unit, called MEKA, to protect urban environments in future engagements with the omnic threat. The government's fears proved to be well founded, as a disturbing pattern of attacks emerged. Every few years, the monstrosity would rise from the sea to assault South Korea and its neighbors. The omnic learned from these encounters, often reconfiguring itself in a different form and appearing with new weapons and capabilities. Each incident ended in a stalemate, with the monstrosity defeated but not destroyed. As the omnic continued to adapt, it eventually disrupted MEKA's drone-control networks, forcing the military to place pilots in the mechs. Scrambling to find suitable candidates, the government turned to the country's professional gamers, who possessed the necessary reflexes and instincts to operate the mechs' advanced weapons systems. Top stars were drafted, including reigning world champion Hana Song, also known as "D.Va." Famous for her elite skills, D.Va was a fierce competitor who played to win at all costs, and she had a well-earned reputation for showing no mercy to her opponents. Seeing her new mission as a game, D.Va fearlessly charges into battle alongside the rest of her MEKA unit, ready to spring to her nation's defense at a moment's notice. Recently, she has begun to stream combat operations to her adoring fans, and her growing following has turned her into a global icon.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>D.Va’s mech is nimble and powerful—its twin Fusion Cannons blast away with autofire at short range, and she can use its Boosters to barrel over enemies and obstacles, or deflect attacks with her projectile-dismantling Defense Matrix.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> D.va's mech is equipped with two fusion cannons laying down continuous fire without needing to reload but hindering her movement speed while firing.</td>
+          <td> 2 damage per bullet with up to 70% damage fall off 20 meters away. D.va fires 73.37 bullets per second. 2x crit multiplier </td>
+          <td> No reload. Movement hindered by 50% while firing.</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> D.va activates her defense matrix shooting down any enemy projectiles coming towards her in a cone in front of her mech</td>
+            <td> Deals no damage, can last up to 2 seconds in a 15 meter cone.</td>
+            <td> 2 second cooldown between uses, 8 second cooldown to regain all charges.</td>
+        </tr>
+        <tr>
+          <td> Boosters </td>
+          <td> D.va's mech launches in whatever direction you are facing, allowing her to fly and barrel into enemies granting slight knockback.</td>
+          <td>10 damage per collision, boosters last for 2 seconds</td>
+          <td> 5 seconds</td>
+        </tr>
+        <tr>
+          <td> Micro missiles </td>
+          <td> D.va launches a volley of explosive rockets.</td>
+          <td> Direct hits do 7 per missile and have a 2-4 damage splash zone up to 1.5 meters away. D.va fires 18 rockets total</td>
+          <td> 8 seconds</td>
+        </tr>
+        <tr>
+          <td> Self-Destruct </td>
+          <td> D,va eject from her mech and sets its ractor to explode, dealing massive damage to nearby opponents</td>
+          <td> 100-1000 damage for enemies within 20 meters of the mech explosion</td>
+          <td> Charges 1% every 2.75 seconds or once you've gained 1375 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
