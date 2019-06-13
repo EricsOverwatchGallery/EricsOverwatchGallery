@@ -1,1 +1,145 @@
-Brigitte
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#brigVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="brigVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/brigitte/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Brigitte</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>No longer sitting on the sidelines, Brigitte Lindholm has taken up arms to defend those in need of protection. The youngest daughter of weapons designer, Torbjörn Lindholm, Brigitte was the first of his children to show an interest in mechanical engineering. Brigitte spent much of her spare time in her father's workshop, learning the trade and honing her skills. Her aptitude for engineering mirrored that of her father's, but Brigitte's primary interest was in armor fabrication and defensive systems, unlike Torbjörn, who was world renowned (and perhaps infamous) for the weapons he created. Everyone expected that Brigitte would continue her apprenticeship and follow in her father's footsteps. But her plans changed due to influence of another prominent figure in her life, her father's close friend and fellow Overwatch agent, Reinhardt Wilhelm. A close friend of the family and Brigitte's godfather, Reinhardt told Brigitte tales of heroes and chivalry as she grew up. After his retirement and Overwatch's fall, Reinhardt declared that he would become a knight-errant on a quest to bring justice. Before he left on his adventures, Brigitte surprised him by asking to join him as his squire. Reinhardt accepted. As a squire, Brigitte had many responsibilities, the most important of which was the upkeep of Reinhardt's Crusader armor (a design she was familiar with as the current version was designed by her father). But more and more, she found her main job was taking care of Reinhardt himself, trying to protect him from his overenthusiasm even as his body was breaking down from years of combat. Eventually, she realized that serving only as a mechanic wasn't enough, and that the best way she could aid Reinhardt was to become a warrior in her own right. While Reinhardt trained her in combat, Brigitte began to build her own suit of armor in secret. Now Brigitte fights at Reinhardt's side to protect him, and any others in need as knight and squire journey to make the world a better place, one battle at a time.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Brigitte specializes in armor. She can throw Repair Packs to heal teammates, or automatically heal nearby allies when she damages foes with her Flail. Her Flail is capable of a wide swing to strike multiple targets, or a Whip Shot that stuns an enemy at range. When entering the fray, Barrier Shield provides personal defense while she attacks enemies with Shield Bash. Brigitte’s ultimate ability, Rally, gives her a substantial short-term boost of speed and provides long-lasting armor to all her nearby allies.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Brigitte swings her flail hitting enemies with a close range melee attack that activates her Inspire, healing nearby allies</td>
+          <td> 35 damage per swing, Inspire heals allies within 20 meters for 16.67 health per second</td>
+          <td> 1 swing every 0.6 seconds</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Brigitte raises her riot shield, allowing her to use it either to retreat defensively or bash enemies with it stunning them. </td>
+            <td> Her shield has 500 health which regenerates at 100 shield per second after being not in use for 2 seconds and her shield bash deals 5 damage to enemies while stunning them for 1 second.</td>
+            <td>3 seconds upon shield break, 7 second cooldown for bash</td>
+        </tr>
+        <tr>
+          <td> Repair Pack </td>
+          <td> Brigitte throws a repair pack at an ally instantly healing them. If the ally is already full health, it provides them with temporary armor instead.</td>
+          <td>Heals up to 150 health and up to 75 armor past max health.</td>
+          <td> 6 seconds</td>
+        </tr>
+        <tr>
+          <td> Flail whip </td>
+          <td> Brigitte whips her flail at enemies granting her significantly increased range and knockback for one hit.  </td>
+          <td> 70 damage up to 20 meters away</td>
+          <td> 4 seconds</td>
+        </tr>
+        <tr>
+          <td> Rally </td>
+          <td> Brigitte gains increased movement speed and provides all nearby allies with temporary armor over time.</td>
+          <td> Grants 30 armor per second for 10 seconds up to 100 extra armor </td>
+          <td> Charges 1% every 4.5 seconds or once you've gained 2250 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
