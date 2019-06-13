@@ -1,1 +1,149 @@
-Mei
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+#meiVid{
+  z-index: -1;
+  position: absolute;
+  right:0%;
+  bottom: -5%;
+  min-width: 100%;
+  min-height: 100%;
+}
+.topVid{
+  z-index: 0;
+}
+h1 {
+  margin: 0;
+  padding 0;
+  text-transform:uppercase;
+  font-weight: lighter;
+  font-family: impact;
+  font-size: 120px;
+  background: -webkit-linear-gradient(#b4b4b4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container{
+  margin: 0px;
+  padding: 10px;
+}
+.collapsible{
+  padding: 10px;
+  font-family: Calibri;
+  font-weight: 550;
+  font-size: 20px;
+  height: 75px;
+  width: 600px;
+  text-align: Justify;
+  background:rgba(71,71,90,0.8);
+  color:white;
+  border: none;
+}
+.active, .collapsible:hover {
+  background-color: rgba(47,172,208,0.8);
+}
+.content{
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 570px;
+  color: white;
+  overflow: hidden;
+  display: none;
+  background-color: rgba(71,71,90,0.8); 
+}
+  </style>
+  </head>
+  <body>
+  <video autoplay muted loop id="meiVid">
+    <source src="https://d1u1mce87gyfbn.cloudfront.net/hero/mei/idle-video.mp4" type="video/mp4">
+  </video>
+  <div class="topVid">
+  <a href="https://EricsOverwatchGallery.github.io" style="color: yellow; font-family: impact; font-size: 20px;"><em> < Back </em></a>
+    <h1><em>Mei</em></h1>
+    <div class="container">
+      <button class="collapsible">
+          BIOGRAPHY
+          </button>
+          <div class="content">
+       <p>Mei is a scientist who has taken the fight to preserve the environment into her own hands.
+Though many blamed the planet's escalating, unexplained climate phenomena on the advent of new technologies, the rapidly growing omnic population, and drastically increased consumption of resources, the true cause remained unknown. To find a solution, Overwatch established a series of eco-Watchpoints at remote, critical locations worldwide.
+Mei-Ling Zhou was a member of this multiyear initiative. A peerless climatologist, she had introduced cutting-edge innovations in the field of climate manipulation that protected at-risk areas in Asia and beyond. She was assigned to the program's monitoring station at Watchpoint: Antarctica when disaster struck: a sudden, catastrophic polar storm battered the installation and cut it off from the outside world, leaving the facility damaged and the scientists stranded. As their supplies dwindled, they entered cryostasis in a last-ditch effort to survive until a rescue attempt could be made.
+But that rescue never came. It was years later when the team's cryogenics chamber was finally discovered. Mei, still in hibernation, was the only survivor. The world Mei awoke to had gone through considerable changes: Overwatch was no more, the serious climate issues had worsened, and none of the eco-Watchpoints were in operation. Any clues that they had uncovered were lost.
+Mei has decided to continue her work on her own. Equipped with a portable version of her climate-manipulation technology, she travels around the world, hoping to re-establish the eco-network and track down the causes of the threats to the planet's ecosystem.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          PLAYSTYLE
+          </button>
+          <div class="content">
+       <p>Mei’s weather-altering devices slow opponents and protect locations. Her Endothermic Blaster unleashes damaging icicles and frost streams, and she can Cryo-Freeze herself to guard against counterattacks, or obstruct the opposing team's movements with an Ice Wall.</p>
+       </div>
+    </div>
+    <div class="container">
+      <button class="collapsible">
+          ABILITIES
+          </button>
+          <div class="content">
+       <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th> Ability </th>
+          <th> Description </th>
+          <th> Damage </th>
+          <th> Cooldown </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Primary Fire </td>
+          <td> Ashe shoots her semi automatic rifle unscoped for an increased rate of fire</td>
+          <td> 40 damage with a damage fall off multiplier up to half, 40 meters away. 2x crit multiplier</td>
+          <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Secondary Fire </th>
+            <td> Ashe scopes in, trading her fire rate for increased damage and accuracy</td>
+            <td> 85 damage with a damage fall off multiplier up to half, 50 meters away. 2x crit multiplier</td>
+            <td> 12 mag, 0.5 second reload for the first bullet's start animation, 0.3 second reload for every bullet after</td>
+        </tr>
+        <tr>
+          <td> Dynamite </td>
+          <td> Ashe throws a bundle of dynamite that detonates after a short delay or immediately when shot. The dynamite then inflicts the burning effect on enemies causing damage over time</td>
+          <td> 30-75 on detonation depending how close you are to the epicenter of the explosion and 20 damage per second for 5 seconds from the burning effect</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> Coach Gun </td>
+          <td> Ashe shoots her secondary blunderbuss using the knockback to proper herself and enemies away</td>
+          <td> 6 per pellet and fires 15 pellets which will only travel up to 9.4 meters</td>
+          <td> 10 seconds</td>
+        </tr>
+        <tr>
+          <td> B.O.B. </td>
+          <td> Ashe summons her Big Omnic Butler, B.O.B. who charges forward and knocks enemies into the air making them easy target while firing from his wrist cannons.</td>
+          <td> 120 damage upon running into an enemy and 112 damage per second while firing at enemies. Lasts 10 seconds</td>
+          <td> Charges 1% every<br> 4 seconds or once you've gained 2000 charge points</td>
+        </tr>
+       </div>
+    </div>
+    </div>
+    </div>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+  </body>
+</html>
